@@ -39,7 +39,28 @@ function sommaArray(array1: number[][]) { //funzione che come input ha un array 
 let myArray: number[][] = [[1, 2, 3], [4, 5], [6, 7, 8, 9]]; //creo l'array multidimensionale di numeri
 console.log(sommaArray(myArray)); //output: 45
 
-//TODO altro esempio
+//! TRY e CATCH
+/*Il blocco try e catch viene utilizzato in programmazione per gestire le eccezioni (o gli errori) che possono verificarsi
+durante l'esecuzione di un programma.
+In questo esempio, la funzione "divide" tenta di dividere il primo parametro a per il secondo parametro b.
+Tuttavia, se b è uguale a 0, si verificherà un'eccezione di divisione per zero, che interromperà l'esecuzione del programma.
+Per evitare l'interruzione, viene utilizzato un blocco try e catch per gestire l'eccezione.
+Nel blocco try, viene tentata la divisione e nel caso si verificasse un'eccezione, essa verrebbe catturata e gestita nel blocco catch,
+dove viene visualizzato un messaggio di errore e viene restituito il valore 0.
+In questo modo, anche se la divisione per zero genera un'eccezione, il programma non si interrompe e viene visualizzato un messaggio
+di errore comprensibile.*/
+
+function divide(a: number, b: number): number {
+  try {
+    // tenta di dividere a per b
+    return a / b;
+  } catch (e) {
+    // gestisce l'eccezione se si verifica un errore durante la divisione
+    console.log("Si è verificato un errore durante la divisione.");
+    return 0;
+  }
+}
+console.log(divide(10, 0)); // Output: Si è verificato un errore durante la divisione. 0
 
 
 
