@@ -12,9 +12,3 @@ let n2: number [] = [33,5,7,2,8,1];
 console.log(unisciArray(n1, n2));
 
 
-
-
-
-
-
-
